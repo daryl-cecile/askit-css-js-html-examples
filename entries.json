@@ -1,0 +1,224 @@
+{
+	"entries":[
+		{
+			"title": "Setting color values",
+			"lines": [
+				"background-color: #00FF00; //sets background to green",
+				"background: rgb(255, 0, 0); //sets background to red",
+				"color: rgba(0, 0, 255, 0.5); //sets text color to blue with 50% alpha (transparency)",
+				"background: hsl(9, 100%, 64%); //sets background to salmon-like color",
+				"background-color: hsla(9, 100%, 64%, 0.5); //sets background to salmon-like with alpha of 50%"
+			],
+			"description": "In CSS, you can set color values by using their HEX, RGB, RGBA, and HSL values",
+			"language": "css"
+		},
+		{
+			"title": "Changing text color",
+			"lines":[
+				"color: red;"
+			],
+			"language": "css"
+		},
+		{
+			"title": "Changing background color",
+			"lines": [
+				"background-color: red;"
+			],
+			"language": "css"
+		},
+		{
+			"title": "Changing background color of the page",
+			"lines": [
+				"body {",
+				"    background: green; // sets the background to green",
+				"}"
+			],
+			"language": "css"
+		},
+		{
+			"title": "setting the background to an image",
+			"lines": [
+				"body {",
+				"    background-image: url(\"my-image.png\");",
+				"}"
+			],
+			"language": "css"
+		},
+		{
+			"title": "Remove background image repeat",
+			"lines": [
+				"background-repeat: none;"
+			],
+			"language": "css"
+		},
+		{
+			"title": "Change the position of the background image",
+			"keywords": ["center","middle","left","right","top","bottom"],
+			"lines": [
+				"background-position: top left; // sets image position to top left",
+				"background-position: center right; //sets image position to center right",
+				"background-position: center center; //positions background image to center"
+			],
+			"language": "css"
+		},
+		{
+			"title": "align text to middle",
+			"keywords": ["center","align"],
+			"lines": [
+				"text-align: center;"
+			],
+			"language": "css"
+		},
+		{
+			"title": "Making text size bigger",
+			"keywords": ["font","size","big"],
+			"lines": [
+				"font-size: 11px; // normal",
+				"font-size: 30px; // bigger"
+			],
+			"language": "css"
+		},
+		{
+			"title": "Style an element after a div",
+			"lines": [
+				"div + * {",
+				"    border: 1px solid orange;",
+				"}"
+			],
+			"description": "This will select all elements that appear directly after a div",
+			"language": "css"
+		},
+		{
+			"title": "Style the first element inside a div",
+			"lines": [
+				"div:first-child {",
+				"    color: purple;",
+				"}"
+			],
+			"description": "This will select the first element inside every div",
+			"language": "css"
+		},
+		{
+			"title": "Style elements where the mouse click is held down",
+			"lines": [
+				"button:active {",
+				"    background: black;",
+				"    color: white;",
+				"}"
+			],
+			"description": "When the mouse is held down on a button, the button background will go black, and foreground will go white",
+			"language": "css"
+		},
+		{
+			"title": "Style elements where the user is hovering",
+			"lines": [
+				"a:hover{",
+				"    color: purple;",
+				"}"
+			],
+			"description": "Whenever the user hovers over a link, the text will go purple",
+			"language": "css"
+		},
+		{
+			"title": "Setting the border color of an element",
+			"lines": [
+				"border: 2px solid blue; // sets border width, style, and color",
+				"",
+				"// same as the following",
+				"border-color: blue;",
+				"border-width: 2px;",
+				"border-style: solid;"
+			],
+			"language": "css"
+		},
+		{
+			"title": "Underline text",
+			"lines": [
+				"text-decoration: underline;"
+			],
+			"language": "css"
+		},
+		{
+			"title": "Cross out text",
+			"keywords": ["line through", "crossed"],
+			"lines": [
+				"text-decoration: line-through;"
+			],
+			"language": "css"
+		},
+		{
+			"title": "Make text bold",
+			"lines": [
+				"font-weight: bold;"
+			],
+			"language": "css"
+		},
+		{
+			"title": "Make text italic",
+			"lines": [
+				"font-style: italic;"
+			],
+			"language": "css"
+		},
+		{
+			"title": "Change text letter casing",
+			"keywords": ["uppercase","lowercase","title case","capital"],
+			"lines": [
+				"text-transform: uppercase;",
+				"text-transform: lowercase;",
+				"text-transform: capitalize;"
+			],
+			"language": "css"
+		},
+		{
+			"title": "Set variables in CSS",
+			"lines": [
+				"img {",
+				"    --some-length: 32px;",
+				"",
+				"    height: var(--some-length);",
+				"    width: var(--some-length);",
+				"}"
+			],
+			"description": "Starting a css property name with double dashes (--) will tell css it is a variable",
+			"language": "css"
+		},
+		{
+			"title": "Spaces between letters, words, and lines",
+			"lines": [
+				"line-height: 2; //increases the spacing between lines",
+				"letter-spacing: 3px; // increases the space between letters",
+				"word-spacing: 4px; //increases spaces between words"
+			],
+			"language": "css"
+		},
+		{
+			"title": "Set font of text",
+			"keywords": ["font-family"],
+			"lines": [
+				"font-family: sans-serif, Arial"
+			],
+			"description": "In order to use custom web fonts, you will need to import the stylesheet for the font, before setting it.",
+			"language": "css"
+		},
+
+		{
+			"title": "Link an external stylesheet to my document",
+			"keywords": ["style", "stylesheet", "css"],
+			"lines": [
+				"<link rel=\"stylesheet\" type=\"text/css\" href=\"mystyle.css\">"
+			],
+			"description": "Add this to the &lt;head&gt; tag of your document, making sure the <code>href</code> attribute points to your css file",
+			"language": "html"
+		},
+		{
+			"title": "Link an external script to my document",
+			"keywords": ["javascript"],
+			"lines": [
+				"<script src=\"myscript.js\"></script>"
+			],
+			"description": "Add this to your document, making sure that the <code>src</code> attribute points to the URL of the script.",
+			"language": "html"
+		}
+	]
+}
