@@ -5,7 +5,7 @@ The example collection can be found in the `entries.json` file which is a JSON-f
 ```typescript
 type Entry = {
     title: string;
-    keywords: Array<string>;
+    keywords?: Array<string>;
     lines: Array<string>|string;
     description?: string;
     language: "css"|"html"|"javascript"|"typescript"
